@@ -23,9 +23,9 @@ logging.level.org.springframework.security: DEBUG
 spring:
   profiles: development
   datasource:
-    url: jdbc:mysql://192.168.99.100:3306/dev
+    url: jdbc:mysql://192.168.10.152:3306/dev
     username: root
-    password: dbpass
+    password: 123456
     initialize: true
 security.ignored: /resources/**
 ---
@@ -39,9 +39,9 @@ security:
 spring:
   profiles: docker
   datasource:
-    url: jdbc:mysql://mysql:3306/dev
+    url: jdbc:mysql://192.168.10.152:3306/dev
     username: root
-    password: dbpass
+    password: 123456
     initialize: true
 security.ignored: /resources/**
 eureka:
